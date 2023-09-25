@@ -1,0 +1,22 @@
+<div class="container mt-5">
+    <div class="d-flex mt-3 mb-3 justify-content-between align-items-center">
+        <h4>
+            Supplier
+        </h4>
+    </div>
+    <input type="text" class="form-control mt-3 mb-3 bi bi-search" placeholder="Cari kategori barang...">
+    <table class="table table-secondary" style="box-sizing: border-box;">
+        <thead>
+            <tr>
+                <th scope="col">Alamat</th>
+                <th scope="col">Nama</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of supplier">
+                <td scope="row" class="table-light">{{item.alamat}}</td>
+                <td class="table-light">{{item.nama}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
